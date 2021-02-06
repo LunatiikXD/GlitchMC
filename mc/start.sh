@@ -1,0 +1,6 @@
+echo Requesting host...
+echo Starting server...
+echo -e "\e[1;31mKeep in mind that the server might take a while to generate...\e[0m"
+echo -e "\e[93mIf the CPU goes up to 100%, you can expect waiting several minutes.\e[0m"
+java -Xmx1024M -Xms1024M -jar server.jar nogui &
+./../ngrok/ngrok tcp 25565 -region us
